@@ -27,12 +27,26 @@ class CampaignShow extends Component {
     const {
       minimumContribution,
       balance,
+      name,
       requestsCount,
       approversCount,
       manager
     } = this.props;
 
     const items = [
+
+       {
+        header: name,
+        image: "https://byuc.files.wordpress.com/2012/07/avat-2.jpg",
+        // description:
+        //   "The manager created this campaign and can create requests to withdraw money",
+        // meta: "Address of manager",
+        style: {
+          overflowWrap: "break-word",
+          height: "90px",
+          width: "90px"
+        }
+      },    
       {
         header: manager,
         description:
